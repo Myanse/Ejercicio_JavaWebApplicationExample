@@ -13,8 +13,12 @@ public class MyServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
-		request.getRequestDispatcher("bienvenida.jsp").forward(request, response);
-
+		String options = request.getParameter("options");
+		if(options == null) {
+			response.sendRedirect("formulario.jsp");
+		} else {
+			request.getRequestDispatcher("bienvenida.jsp").forward(request, response);
+		}
 	}
 
 }
