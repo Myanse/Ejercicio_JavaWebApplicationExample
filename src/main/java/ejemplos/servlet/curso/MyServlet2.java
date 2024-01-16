@@ -13,5 +13,6 @@ public class MyServlet2 extends HttpServlet {
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
+		request.getRequestDispatcher("bienvenida.jsp").forward(request, response);
 	}
 }

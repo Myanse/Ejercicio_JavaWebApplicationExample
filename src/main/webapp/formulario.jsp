@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Formulario</h1>
-    <form action=myServlet method=get>
+    <form action=myServlet2 method=get>
 		<label for="username">Nombre de usuario:</label><br>
 		<input type="text" name="username" value=""><br>
 		Elige un saludo:<br>
